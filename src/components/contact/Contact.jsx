@@ -98,7 +98,7 @@ import 'react-toastify/dist/ReactToastify.css';
                 </div>
                 <div className="back-form">
                     <div className="img-back">
-                        <h4>Send your message</h4>
+                        
                         <img src="assets/shake.svg" alt="" />
                     </div>
                     <form onSubmit={onSubmit}>
@@ -127,6 +127,9 @@ import 'react-toastify/dist/ReactToastify.css';
                         </div>
                     </form>
                 </div>
+            </div>
+            <div className="footer">
+              
             </div>
         </div>
     )

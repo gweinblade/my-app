@@ -1,5 +1,8 @@
 .contact {
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   .heading-container {
     display: flex;
     flex-direction: column;
@@ -47,12 +50,12 @@
     }
   }
   .central-form {
-    max-width: 1100px;
+    width: 70%;
     padding: 10px;
     display: flex;
     box-shadow: 0 0px 20px -2px #1f2235;
     border-radius: 12px;
-    margin: 0 auto;
+    margin: auto;
     flex-direction: column;
     justify-content: center;
     background-color: #1f2235;
@@ -84,16 +87,15 @@
       }
       form {
         width: auto;
-        box-shadow: 0 0 2px 1px white;
+        box-shadow: 0 0px 20px -2px #1f2235;
         display: flex;
         color: #111;
         padding: 15px;
         justify-content: center;
         flex-direction: column;
-        margin-top: -52px;
+        margin: auto;
         opacity: 0.9;
         background-color: white;
-        box-shadow: 0 0px 20px -2px #1f2235;
         border-radius: 14px;
         label {
           margin-bottom: 5px;
@@ -131,20 +133,41 @@
       }
     }
   }
-  @media screen and (min-width: 940px) {
-    .img-back {
-      flex: 1 1;
-      align-self: center;
-      margin-right: 20px;
+}
+@media only screen and (max-width: 1023px) {
+  .contact {
+    .heading-container {
+      margin: 0 0 30px;
+      height: 102px;
     }
-    form {
-      flex: 0.9 1;
+    .central-form {
+      .col {
+        .title {
+          letter-spacing: 0.1em;
+          margin-bottom: 0;
+        }
+      }
+      .back-form {
+        .img-back {
+          display: none;
+        }
+      }
     }
-    .back-form {
-      max-width: 1100px;
-      display: flex;
-      justify-content: space-between;
-      //margin: 30px auto 0;
-    }
+  }
+}
+@media screen and (min-width: 1024px) {
+  .img-back {
+    flex: 1 1;
+    align-self: center;
+    margin-right: 20px;
+  }
+  form {
+    flex: 0.9 1;
+  }
+  .back-form {
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    //margin: 30px auto 0;
   }
 }

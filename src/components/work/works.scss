@@ -22,7 +22,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin: 0 0 170px;
+    //margin: 0 0 170px;
     .screen-heading {
       font-size: 35px;
       color: #1f2235;
@@ -63,6 +63,12 @@
       }
     }
   }
+  .resume-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
   .resume-container {
     display: flex;
     align-items: center;
@@ -102,7 +108,7 @@
   }
 
   .resume-details-carousal {
-    transition: transform 1s ease-out;
+    transition: transform 0.5s ease-out;
   }
 
   .bullet-container {
@@ -284,17 +290,33 @@
     }
     .heading-container {
       margin: 0;
+      .screen-sub-heading {
+        overflow-y: hidden;
+      }
+    }
+    .resume-main-heading span {
+      font-size: 15px;
+    }
+    .resume-sub-heading span {
+      font-size: 13px;
+    }
+    .heading-date {
+      font-size: 12px;
     }
 
     .bullets {
       width: 90%;
+    }
+    .bullet {
+      height: 10%;
+      margin: 9px 0;
     }
 
     .resume-card {
       height: fit-content;
       display: flex;
       flex-direction: column;
-      margin: 30px 0;
+      //margin: 30px 0;
       align-items: center;
       width: 90%;
     }
@@ -306,11 +328,14 @@
     }
 
     .resume-bullets {
-      margin: 30px 0;
+      //margin: 30px 0;
       width: 100%;
       height: fit-content;
+      overflow-y: hidden;
     }
-
+    .resume-screen-container {
+      height: 360px;
+    }
     .selected-bullet {
       width: 100%;
     }

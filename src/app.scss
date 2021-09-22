@@ -21,3 +21,11 @@
     }
   }
 }
+@media screen and (max-width: 612px) {
+  .app {
+    .sections {
+      height: calc(100vh - 45px);
+      top: 45px;
+    }
+  }
+}

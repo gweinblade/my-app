@@ -191,9 +191,7 @@ export default function Works() {
     
       return (
         <div className="works" id="works">
-          
-            <div className="resume-content">
-              <div class="heading-container">
+          <div class="heading-container">
                 <div class="screen-heading">
                   <span> Resume </span>
                 </div>
@@ -207,6 +205,8 @@ export default function Works() {
                   </div>
                 </div>
               </div>
+            <div className="resume-content">
+              
               
               <div className="resume-card">
                 <div className="resume-bullets">
